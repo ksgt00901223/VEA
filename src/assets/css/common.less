@@ -1,0 +1,429 @@
+@import '../iconfont/iconfont.css';
+//基础标签样式
+* {
+  padding: 0;
+  margin: 0;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+body {
+  color: #666;
+  font-size: 14px;
+  font-family: MicrosoftYaHei;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #666;
+}
+.iconfont {
+  font-family: 'iconfont' !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+//布局
+.w {
+  // width: 1200px;
+  width: 1300px;
+  margin: 0 auto;
+}
+.hw100 {
+  height: 100%;
+  width: 100%;
+}
+//小布局
+//margin
+.mb100 {
+  margin-bottom: 100px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mtb80 {
+  margin: 80px 0 80px;
+}
+//background
+.bgfff {
+  background: #fff;
+}
+//display
+
+.dpf {
+  display: flex;
+}
+.lineBlock {
+  display: inline-block;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+//对齐方式
+.flow {
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-start;
+  & > * {
+    box-sizing: border-box;
+    flex: 0 0 25%; //流式布局，默认一行四个
+  }
+}
+.mcenter {
+  margin: 0 auto;
+}
+.vcenter {
+  display: flex;
+  align-items: center;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.justify {
+  display: flex;
+  justify-content: space-between;
+}
+.tal {
+  text-align: left;
+}
+.tac {
+  text-align: center;
+}
+.tar {
+  text-align: right;
+}
+//position
+.por {
+  position: relative;
+}
+.poa {
+  position: absolute;
+}
+.pof {
+  position: fixed;
+}
+//box
+.r10 {
+  border-radius: 10px;
+}
+.r20 {
+  border-radius: 20px;
+}
+.c {
+  border-radius: 50%;
+}
+.break{
+  word-break: break-all
+}
+.modal {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: 2000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  & > div {
+    overflow: hidden;
+    .r10;
+  }
+}
+.avatarShadow {
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: 0px 0px 13px rgba(0, 87, 255, 0.91);
+}
+.border-bottom-active {
+  border-bottom: 2px solid rgba(46, 117, 248, 0.6);
+}
+.border-bottom-grey {
+  border-bottom: 2px solid #e8e8e8;
+}
+.hover {
+  cursor: pointer;
+}
+
+.overhide,.of {
+  overflow: hidden;
+}
+.line-gradient-2(@color1,@color2) {
+  background: -webkit-linear-gradient(left, @color1, @color2); /* Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(right, @color1, @color2); /* Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, @color1, @color2); /* Firefox 3.6 to 15 */
+  background: linear-gradient(to right, @color1, @color2); /* 标准语法 */
+}
+
+.radial-gradient-4(@color1,@color2,@color3,@color4) {
+  background: -webkit-radial-gradient(
+    circle at left,
+    @color1 30%,
+    @color2 37%,
+    @color3 70%,
+    @color4
+  ); /* Safari 5.1- 6.0 */
+  background: -o-radial-gradient(circle at left, @color1 30%, @color2 37%, @color3 70%, @color4); /* Opera 11.6-12.0 */
+  background: -moz-radial-gradient(circle at left, @color1 30%, @color2 37%, @color3 70%, @color4); /* Firefox 3.6-15 */
+  background: radial-gradient(circle at left, @color1 30%, @color2 37%, @color3 70%, @color4); /* 标准语法 */
+}
+//width height
+.w100 {
+  width: 100%;
+}
+//padding
+.p10 {
+  padding: 10px;
+}
+.p20 {
+  padding: 20px;
+}
+.p020 {
+  padding: 0 20px;
+}
+.p25 {
+  padding: 25px;
+}
+.p15 {
+  padding: 15px;
+}
+.pl15 {
+  padding-left: 15px;
+}
+//float
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+
+//字体
+.i {
+  font-style: italic;
+}
+.fz12 {
+  font-size: 12px !important;
+}
+.fz14 {
+  font-size: 14px !important;
+}
+.fz16 {
+  font-size: 16px !important;
+}
+.fz18 {
+  font-size: 18px !important;
+}
+.fz20 {
+  font-size: 20px !important;
+}
+.fz24 {
+  font-size: 24px !important;
+}
+.fz28 {
+  font-size: 28px !important;
+}
+.fz30 {
+  font-size: 30px !important;
+}
+.fz36 {
+  font-size: 36px !important;
+}
+.c333 {
+  color: #333;
+}
+.c666 {
+  color: #666;
+}
+.c999 {
+  color: #999;
+}
+.cfff {
+  color: #fff;
+}
+.red {
+  color: red;
+}
+//页面特有
+//教师列表表头
+.bg-line-blue {
+  // background: -webkit-linear-gradient(left, #5499FE, #7DB1FD); /* Safari 5.1 to 6.0 */
+  // 		background: -o-linear-gradient(right, #5499FE, #7DB1FD); /* Opera 11.1 to 12.0 */
+  // 		background: -moz-linear-gradient(right, #5499FE, #7DB1FD); /* Firefox 3.6 to 15 */
+  //         background: linear-gradient(to right, #5499FE, #7DB1FD); /* 标准语法 */
+  // .line-gradient-2(#5499FE, #7DB1FD)
+  .radial-gradient-4(#5499fe, #7db1fd, #80b1f9, #5499fe);
+}
+//子路由块
+.viewsBox {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+//文件图标
+//文件夹
+.icon-folder,
+.icon-excel,
+.icon-PPT,
+.icon-word,
+.icon-pdf,
+.icon-File-Music,
+.icon-img1,
+.icon-video_file,
+.icon-zip,
+.icon-files,
+.icon-file,
+.icon-html {
+  .iconfont;
+}
+.icon-folder {
+  color: rgb(255, 213, 54);
+}
+.icon-excel {
+  color: rgb(1, 114, 62);
+}
+.icon-PPT {
+  color: rgb(195, 81, 50);
+}
+.icon-word {
+  color: rgb(44, 151, 255);
+}
+.icon-pdf {
+  color: rgb(249, 89, 81);
+}
+.icon-File-Music {
+  color: rgb(35, 163, 207);
+}
+.icon-img1 {
+  color: rgb(107, 203, 90);
+}
+.icon-video_file {
+  color: rgb(69, 64, 71);
+}
+.icon-zip {
+  color: rgb(249, 95, 93);
+}
+.icon-files {
+  color: #333;
+}
+.icon-file {
+  color: #555;
+}
+.icon-html {
+  color: rgb(228, 77, 38);
+}
+
+//after before
+.star:before {
+  //红星号
+  content: '*';
+  color: red;
+  font-size: 16px;
+}
+.minus {
+  //两边横线
+  position: relative;
+}
+.minus:before,
+.minus:after {
+  content: '';
+  height: 4px;
+  width: 30px;
+  background: #5499fe;
+  position: absolute;
+  top: 50%;
+  margin-top: -2px;
+}
+.minus:before {
+  left: -40px;
+}
+.minus:after {
+  right: -40px;
+}
+.line_ {
+  //下划线
+  position: relative;
+  color: #5499fe;
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -25px;
+    background: #5499fe;
+    height: 4px;
+    width: 50px;
+  }
+}
+
+//去除饿了么ui样式
+.custom {
+  input {
+    outline: 0 !important;
+    &:focus {
+      outline: 0 !important;
+    }
+  }
+  .el-input__inner {
+    border-radius: 20px;
+  }
+}
+//渐变色
+// .line-gradient-2(#809EDF,#5D6BC5)
+// .line-gradient-2(#809EDF,#5D6BC5)
+// .line-gradient-2(#809EDF,#5D6BC5)
+// .line-gradient-2(#809EDF,#5D6BC5)
+//某页面用
+//教师管理
+.teaManagement {
+  .teaPart {
+    &:nth-child(3n) {
+      .content {
+        .line-gradient-2(#809edf, #5d6bc5);
+      }
+    }
+    &:nth-child(3n + 1) {
+      .content {
+        .line-gradient-2(#ea86e3, #ff72a2);
+      }
+    }
+    &:nth-child(3n + 2) {
+      .content {
+        .line-gradient-2(#ffcf71, #ff9771);
+      }
+    }
+  }
+}
+.courseAllot {
+  .allot .selectCourse .allotInfo .courseItem {
+    
+      &:nth-child(1)>div {
+        .line-gradient-2(#809edf, #5d6bc5);
+      }
+      &:nth-child(2)>div {
+        .line-gradient-2(#ea86e3, #ff72a2);
+      }
+      &:nth-child(3)>div {
+        .line-gradient-2(#ffcf71, #ff9771);
+      }
+      &:nth-child(4)>div {
+        .line-gradient-2(#5EA6CF, #3A599F);
+      }
+    
+  }
+}
